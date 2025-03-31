@@ -243,3 +243,8 @@ __vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
 trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 ./insert_data.sh
+cp students.csv students_text.csv
+ld
+ls --color=auto
+rm students_text.csv
+cp students.csv students_test.csv
